@@ -197,7 +197,7 @@ footer{padding:16px 28px;text-align:center;
     <div class="cards">
 
       <!-- Card 1: Comments Sentiment Analysis -->
-      <div class="dash-card card-1" onclick="goto('https://anant-pfm.github.io/Comments-Sentimental-Intelligence/')">
+      <div class="dash-card card-1" onclick="goto('https://ugc-comments.vercel.app')">
         <img class="card-cover"
           src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=760&fit=crop&auto=format&q=80"
           alt="Comments Sentiment Analysis">
@@ -233,7 +233,7 @@ footer{padding:16px 28px;text-align:center;
       </div>
 
       <!-- Card 2: UGC Production Tracker -->
-      <div class="dash-card card-2" onclick="goto('https://anant-pfm.github.io/ugc-tracker/')">
+      <div class="dash-card card-2" onclick="goto('https://ugc-tracker-ten.vercel.app')">
         <img class="card-cover"
           src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&h=760&fit=crop&auto=format&q=80"
           alt="UGC Production Tracker">
@@ -279,12 +279,12 @@ footer{padding:16px 28px;text-align:center;
 /* ── Auth guard ── */
 const SESSION_KEY = 'ugc_auth_v1';
 if(!sessionStorage.getItem(SESSION_KEY)){
-  window.location.href = 'login.html';
+  window.location.href = '/';
 }
 
 function logout(){
   sessionStorage.removeItem(SESSION_KEY);
-  window.location.href = 'login.html';
+  window.location.href = '/';
 }
 
 function goto(url){
